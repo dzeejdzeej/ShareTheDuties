@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/registerLayout"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:background="@color/colorPrimary"
+        tools:context="com.example.dzeejdzeej.sharetheduties.RegisterActivity">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="25dp"
+                app:srcCompat="@drawable/logo"
+                android:id="@+id/logo"/>
+        <TextView
+                android:text="Share The Duties - Registration"
+                style="@style/text_view_style"
+                android:textSize="20dp"
+                android:id="@+id/appName"/>
+        <EditText
+                style="@style/edit_text_style"
+                android:inputType="textPersonName"
+                android:hint="username"
+                android:id="@+id/usernameText"/>
+        <EditText
+                style="@style/edit_text_style"
+                android:inputType="textPassword"
+                android:hint="password"
+                android:id="@+id/passText"/>
+
+        <EditText
+                style="@style/edit_text_style"
+                android:inputType="textPassword"
+                android:hint="confirm password"
+                android:id="@+id/passConfirmText"/>
+        <Button
+                android:text="Register"
+                style="@style/button_style"
+                android:id="@+id/registerButton"/>
+
+        <TextView
+                android:text="I already have an account"
+                android:clickable="true"
+                style="@style/text_view_style"
+                android:id="@+id/loginText"/>
+
+    </LinearLayout>
+</RelativeLayout>

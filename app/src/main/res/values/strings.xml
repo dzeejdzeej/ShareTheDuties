@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ShareTheDuties</string>
+    <string-array name="mySearch">
+        <item>Sanocka</item>
+        <item>Jugoslowianska</item>
+    </string-array>
+</resources>
