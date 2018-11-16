@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/menuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:background="@color/colorPrimary"
+        tools:context="com.example.dzeejdzeej.sharetheduties.MenuActivity">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:text="username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="18dp"
+                android:id="@+id/loggedUser" android:layout_weight="1"/>
+        <TextView
+                android:text="Log out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textSize="18dp"
+                android:clickable="true"
+                android:id="@+id/logOut" android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:text="Group"
+                style="@style/text_view_style"
+                android:paddingTop="40dp"
+                android:paddingBottom="40dp"
+                android:textSize="30dp"
+                android:id="@+id/appName"/>
+
+        <Button
+                android:text="Search"
+                style="@style/button_style"
+                android:id="@+id/searchButton"/>
+
+        <TextView
+                android:text="Create your own group"
+                style="@style/text_view_style"
+                android:paddingTop="60dp"
+                android:paddingBottom="20dp"
+                android:textSize="20dp"
+                android:id="@+id/myGroup"/>
+
+        <EditText
+                style="@style/edit_text_style"
+                android:inputType="textPersonName"
+                android:hint="group name"
+                android:id="@+id/groupNameText"/>
+
+        <Button
+                android:text="Create"
+                style="@style/button_style"
+                android:id="@+id/createButton"/>
+
+    </LinearLayout>
+</RelativeLayout>
